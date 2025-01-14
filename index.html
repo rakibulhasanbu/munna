@@ -1,0 +1,144 @@
+<!-- HTML File: personal_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="one.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-photo"></div>
+        <h2>Munaim Ahmed Munna</h2>
+        <p class="bio">Hi, I’m [Munaim Ahmed Munna]. I love sharing my work and connecting with amazing people. Explore my links below!</p>
+    </section>
+
+    <section class="social-links">
+        <a href="https://wa.me/8801784730595"  target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp">
+
+        </a>
+        <a href="https://facebook.com/munaim.ahmed.munna.2024" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/munaimmunna_ahmed" target="_blank">
+            <img src="insta.png" alt="Instagram">
+        </a>
+        
+    </section>
+
+    <section class="contact-info">
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:your-email@example.com">mmm.munaim@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+880 1784730595</a></p>
+    </section>
+
+    <section class="contact-form">
+        <h3>Get in Touch</h3>
+        <form action="https://example.com/submit" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle Dark Mode">
+            <span class="icon sun">🌞</span>
+            <span class="icon moon" hidden>🌙</span>
+        </button>
+    </div>
+    
+
+    <div class="loading-spinner" id="loading-spinner"></div>
+
+    <!-- <section class="testimonials">
+        <h3>What People Say</h3>
+        <div class="testimonial">
+            <p>"Munaim Ahmed Munna is a great person to work with. Highly recommended!"</p>
+            <span>- Client 1</span>
+        </div>
+        <div class="testimonial">
+            <p>"Always impressed by the creativity and professionalism."</p>
+            <span>- Client 2</span>
+        </div>
+    </section> -->
+    <button class="fab">Help</button>
+
+    <button id="back-to-top">↑</button>
+
+    <!-- Help Button -->
+<button class="help-button" onclick="openHelpModal()">Help</button>
+
+<!-- Help Modal -->
+<div id="helpModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeHelpModal()">&times;</span>
+        <h2>Need Help?</h2>
+        <p>Please describe your issue below and we’ll get back to you soon!</p>
+        <form id="helpForm">
+            <textarea placeholder="Describe your issue here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<section class="details-section">
+    <h2>About Me</h2>
+    <p class="summary">
+        Hi, I’m <strong>Munaim Ahmed Munna</strong>. I love sharing my work and connecting with amazing people.
+        <span id="dots">...</span>
+        <span id="more" hidden>
+            <br>
+            <ul>
+                <li>💼 Currently working as <strong>Software Engineer</strong> at <strong>ABC Ltd</strong>.</li>
+                <li>📚 Specialized in <strong>Web Development, JavaScript, and UI/UX Design</strong>.</li>
+                <li>🎯 Interests: Coding, Blogging, and Photography.</li>
+            </ul>
+            <p>
+                I am passionate about building innovative solutions and learning new technologies. Let’s collaborate and create something amazing!
+            </p>
+        </span>
+    </p>
+    <button id="show-more-btn">
+        Show More <span class="icon">▼</span>
+    </button>
+</section>
+
+<main>
+    <section class="cards">
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Create responsive and modern websites that shine.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-palette"></i>
+            <h2>UI/UX Design</h2>
+            <p>Beautiful interfaces designed for an exceptional user experience.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h2>SEO Optimization</h2>
+            <p>Boost your website's visibility and search ranking.</p>
+        </div>
+    </section>
+</main>
+
+
+
+
+    <footer>
+        <p>© 2025 Munaim Ahmed Munna. All rights reserved.</p>
+        <p>Designed with ❤️ by Munna</p>
+    </footer>
+   
+</body>
+</html>
